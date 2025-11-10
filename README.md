@@ -131,6 +131,11 @@ pip install django
 pip install djangorestframework
 ```
 
+###
+```powershell
+pip install rest_framework_simplejwt
+```
+
 ---
 
 | Resource	| Description	| Difficult | Responsable |
