@@ -133,7 +133,7 @@ pip install djangorestframework
 
 ###
 ```powershell
-pip install rest_framework_simplejwt
+pip install djangorestframework-simplejwt
 ```
 
 ---
