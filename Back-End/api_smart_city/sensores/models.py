@@ -1,16 +1,16 @@
 from django.db import models
 
 class Responsavel(models.Model):
-    name = models.CharField(max_length=210)
+    nome = models.CharField(max_length=210)
 
     def __str__(self):
-        return self.name
+        return self.nome
     
 class Local(models.Model):
-    name = models.CharField(max_length=210)
+    nome = models.CharField(max_length=210)
 
     def __str__ (self):
-        return self.name
+        return self.nome
     
 class Ambiente(models.Model):
     local = models.ForeignKey(Local, on_delete=models.CASCADE, related_name='ambiente')
@@ -18,7 +18,7 @@ class Ambiente(models.Model):
     responsable = models.ForeignKey(Responsavel, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
-        return f"{self.local.name} - {self.description[:40]}"
+        return f"{self.local.nome} - {self.description[:40]}"
     
 class Sensor(models.Model):
     SENSOR_TYPES = [
@@ -58,7 +58,7 @@ class Sensor(models.Model):
 class Historico(models.Model):
     sensor = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name="historico")
     valor = models.DecimalField(max_digits=12, decimal_places=4)
-    ambiente = models.ForeignKey(Ambiente, on_delete=models.SET_NULL, null=True, blanl=True)
+    ambiente = models.ForeignKey(Ambiente, on_delete=models.SET_NULL, null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

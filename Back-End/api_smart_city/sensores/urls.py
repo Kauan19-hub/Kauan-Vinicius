@@ -1,7 +1,10 @@
 from django.urls import path
+from django.http import JsonResponse
 from . import views
 
 urlpatterns = [
+    path('', lambda request: JsonResponse({'message': 'PI em andamento'})),
+
     path("responsavel/", views.ResponsavelListCreate.as_view(), name="resp-list-create"),
     path("responsavel/<int:pk>/", views.ResponsavelRetrieveUpDestroy.as_view(), name="resp-rud"),
 
