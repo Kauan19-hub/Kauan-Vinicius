@@ -136,6 +136,11 @@ pip install djangorestframework
 pip install djangorestframework-simplejwt
 ```
 
+###
+```powershell
+pip install django-cors-headers
+```
+
 ---
 
 | Resource	| Description	| Difficult | Responsable |
