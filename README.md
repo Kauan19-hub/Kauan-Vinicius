@@ -89,7 +89,7 @@ python manage.py migrate
 
 ###
 ```powershell
-python manage.py create_default_superuser  # senai/12345
+python manage.py create_default_superuser  # kauan/12345
 ```
 
 ###
