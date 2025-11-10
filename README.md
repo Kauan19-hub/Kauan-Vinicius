@@ -26,13 +26,14 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 | Package | Version |
 |---------|---------|
 |asgiref  |                     `3.10.0` |
-|Django   |                     `5.2.8` |
+|django   |                     `5.2.8` |
 |djangorestframework |          `3.16.1` |
 |djangorestframework_simplejwt | `5.5.1` |
 |pip |                          `25.3` |
 |PyJWT |                        `2.10.1` |
 |sqlparse |                     `0.5.3` |
 |tzdata |                       `2025.2` |
+|django-cors-headers |          `4.9.0`|
 
 ###
 ```powershell
@@ -119,21 +120,6 @@ api_smart/
 │  ├─ urls.py
 │  └─ admin.py
 └─ manage.py
-```
-
-###
-```powershell
-pip install django
-```
-
-###
-```powershell
-pip install djangorestframework
-```
-
-###
-```powershell
-pip install djangorestframework-simplejwt
 ```
 
 ###
