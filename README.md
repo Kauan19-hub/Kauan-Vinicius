@@ -35,22 +35,22 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 |tzdata |                       `2025.2` |
 
 ###
-```python
+```powershell
 python manage.py pop_responsaveis dados/responsaveis.csv
 ```
 
 ###
-```python
+```powershell
 python manage.py pop_locais dados/locais.csv
 ```
 
 ###
-```python
+```powershell
 python manage.py pop_ambientes dados/ambientes.csv
 ```
 
 ###
-```python
+```powershell
 python manage.py pop_sensores dados/sensores.csv
 ```
 
@@ -78,22 +78,22 @@ python manage.py create_default_superuser
 ```
 
 ###
-```python
+```powershell
 python manage.py makemigrations
 ```
 
 ###
-```python
+```powershell
 python manage.py migrate
 ```
 
 ###
-```python
+```powershell
 python manage.py create_default_superuser  # senai/12345
 ```
 
 ###
-```python
+```powershell
 python manage.py runserver
 ```
 
@@ -122,12 +122,12 @@ api_smart/
 ```
 
 ###
-```python
+```powershell
 pip install django
 ```
 
 ###
-```python
+```powershell
 pip install djangorestframework
 ```
 
