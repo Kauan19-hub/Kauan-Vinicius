@@ -61,14 +61,13 @@ from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 
 class Command(BaseCommand):
-    help = "Cria superuser padrão (senai / 123) se não existir"
 
     def handle(self, *args, **options):
         username = "senai"
-        password = "123"
+        password = "1234"
         if not User.objects.filter(username=username).exists():
             User.objects.create_superuser(username=username, email="", password=password)
-            self.stdout.write(self.style.SUCCESS("Superuser 'senai' criado com senha '123'"))
+            self.stdout.write(self.style.SUCCESS("Superuser 'senai' criado com senha '1234'"))
         else:
             self.stdout.write("Superuser já existe.")
 ```
