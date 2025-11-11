@@ -138,3 +138,70 @@ pip install django-cors-headers
 | **Deploy**	| Up to `PythonAnywhere`	| Hard 🔴 | Kauan - Full-Stack |
 
 ---
+
+*CI/CD*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=postman" height="35" alt="postman logo" title="Postman" />
+</div>
+
+###
+
+*Back-End*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=py" height="35" alt="python logo" title="Python" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=django" height="35" alt="django logo" title="Django"/>
+</div>
+
+###
+
+*Data-Base*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=mysql" height="35" alt="mysql logo" title="SQL/MySQL" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=sqlite" height="35" alt="sqlite logo" title="SQLite" />
+</div>
+
+###
+
+*Others Tools*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=git" height="35" alt="git logo" title="Git" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=github" height="35" alt="github logo" title="GitHub" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="35" alt="vscode logo" title="Visual Studio Code" />
+</div>
+
+###
+
+*Front-End*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=html" height="35" alt="html5 logo" title="HTML5" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="35" alt="tailwindcss logo" title="TailwindCSS" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=nodejs" height="35" alt="nodejs logo" title="NodeJS" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=ts" height="35" alt="typescript logo" title="TypeScript" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=angular" height="35" alt="angularjs logo" title="AngularJS" />
+</div>
+
+###
+
