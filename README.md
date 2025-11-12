@@ -7,7 +7,8 @@
 ###
 
 - [https://www.django.com](https://www.djangoproject.com/)<br>
-- [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
+- [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)<br>
+- [https://www.angular.dev](https://angular.dev/)
 
 ---
 
@@ -26,6 +27,19 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 ```json
  "editor.fontFamily": "Arial",
 ```
+
+###
+```json
+"name": "Digital City",
+"description": "Integrator Project (PI)",
+"author": "Kauan Vinícius",
+"skill": "Full-Stack Jr",
+"created_at": ["2025", "November"],
+"main_languages": ["Python", "Django", "Angular", "Node"],
+"api_url": "http://localhost:8000/",
+```
+
+###
 
 | Package | Version |
 |---------|---------|
@@ -118,4 +132,21 @@ pip install django-cors-headers
 | **Deploy**	| Up to `PythonAnywhere`	| Hard 🔴 | Kauan - Full-Stack |
 
 ---
+
+**<h2>✅ Front-End Screen</h2>**
+
+###
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6ff52825-4b81-4395-82a7-643ab8941209" />
+
+###
+
+**<h2>✅ Back-End Screen</h2>**
+
+###
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/223ceff9-a088-41a5-b175-b6929b3528ac" />
+
+
+
 
