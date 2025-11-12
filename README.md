@@ -30,7 +30,13 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 
 ###
 ```json
-"name.of.project": "Digital City",
+"name": "Digital City",
+"description": "Integrator Project (PI)",
+"author": "Kauan Vinícius",
+"skill": "Full-Stack Jr",
+"created_at": "2025, November",
+"main_languages": ["Python", "Django", "Angular", "Node"],
+"api_url": "http://localhost:8000/",
 ```
 
 ###
