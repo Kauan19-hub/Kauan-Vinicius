@@ -129,25 +129,21 @@ pip install django-cors-headers
 ###
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo" title="TailwindCSS" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="35" alt="vscode logo" title="Visual Studio Code" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=html" height="40" alt="html5 logo" title="HTML5" />
+  <img src="https://skillicons.dev/icons?i=git" height="35" alt="git logo" title="Git" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=vscode" height="40" alt="vscode logo" title="Visual Studio Code" />
+  <img src="https://skillicons.dev/icons?i=github" height="35" alt="github logo" title="GitHub" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=git" height="40" alt="git logo" title="Git" />
+  <img src="https://skillicons.dev/icons?i=py" height="35" alt="python logo" title="Python" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=github" height="40" alt="github logo" title="GitHub" />
+  <img src="https://skillicons.dev/icons?i=django" height="35" alt="django logo" title="Django" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=py" height="40" alt="python logo" title="Python" />
+  <img src="https://skillicons.dev/icons?i=mysql" height="35" alt="mysql logo" title="SQL" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=django" height="40" alt="django logo" title="Django" />
+  <img src="https://skillicons.dev/icons?i=sqlite" height="35" alt="sqlite logo" title="SQLite" />
   <img width="1" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="40" alt="mysql logo" title="SQL" />
-  <img width="1" />
-  <img src="https://skillicons.dev/icons?i=sqlite" height="40" alt="sqlite logo" title="SQLite" />
-  <img width="1" />
-  <img src="https://skillicons.dev/icons?i=postman" height="40" alt="postman logo" title="Postman" />
+  <img src="https://skillicons.dev/icons?i=postman" height="35" alt="postman logo" title="Postman" />
 </div>
 
 ###
