@@ -8,7 +8,8 @@
 
 - [https://www.django.com](https://www.djangoproject.com/)<br>
 - [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)<br>
-- [https://www.angular.dev](https://angular.dev/)
+- [https://www.angular.dev](https://angular.dev/)<br>
+- [Schedule PI](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true)
 
 ---
 
@@ -120,16 +121,6 @@ python manage.py runserver
 ```powershell
 pip install django-cors-headers
 ```
-
----
-
-| Resource	| Description	| Difficult | Responsable |
-----------|-----------|-------------|--------------|
-| JWT Authentication |	Login and token access `with djangorestframework-simplejwt` |	Med 🟠 | Kauan - Full-Stack |
-| Script `pop_bd.py` |	Populate the database with simulated data using `pandas` or `Faker` |	Low 🟢 | Kauan - Full-Stack |
-| CORS |	Allow the Angular Front-End to access the API `django-cors-headers` |	Low 🟢 | Kauan - Full-Stack |
-| Filter by environment/sensor	| Ex: “/historico?sensor=3” |	Low 🟢 | Kauan - Full-Stack |
-| **Deploy**	| Up to `PythonAnywhere`	| Hard 🔴 | Kauan - Full-Stack |
 
 ---
 
