@@ -2,7 +2,7 @@
 
 ###
 
-**<h2>Welcome to the Django</h2>**
+**<h1>🌁 Welcome to the Django 🌁</h1>**
 
 ###
 
