@@ -157,8 +157,6 @@ pip install django-cors-headers
   <img src="https://skillicons.dev/icons?i=sqlite" height="40" alt="sqlite logo" title="SQLite" />
   <img width="1" />
   <img src="https://skillicons.dev/icons?i=postman" height="40" alt="postman logo" title="Postman" />
-  <img width="1" />
-  <img src="https://skillicons.dev/icons?i=bootstrap" height="40" alt="bootstrap logo" title="Bootstrap" />
 </div>
 
 ###
