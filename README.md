@@ -128,9 +128,13 @@ pip install django-cors-headers
 
 ###
 
+<h6>Click on the image below and access the Digital City UI/UX</h6>
+
+###
+
 <div align="center">
  <a href="https://www.figma.com/design/vG8RTChmcSyf97XEXaLjbY/Digital-City?m=auto&t=dsPRO4pmuNon2C56-6" title="Access to my Prototype">
-  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4779996d-18e5-46fd-8a77-03ff97f915cf" />
+  <img width="400" height="400" alt="Figma" src="https://github.com/user-attachments/assets/4779996d-18e5-46fd-8a77-03ff97f915cf" />
  </a>
 </div>
 
