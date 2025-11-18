@@ -6,11 +6,13 @@ import style from './Inicial.module.css';
 export function Inicial() {
     return(
         <>
-            <Header/>
-            <main className={style.body}>
-                <Outlet/>
-            </main>
-            <Header/>
+            <Footer/>
+                <Header>
+                    <main className={style.body}>
+                        <Outlet/>
+                    </main> 
+                </Header>
+            <Footer/>
         </>
     );
 }
