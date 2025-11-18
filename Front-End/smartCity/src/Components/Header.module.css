@@ -1,0 +1,23 @@
+.header {
+    font-family: Arial;
+    background: var(--dark-green);
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+
+}
+
+.title {
+    color: var(--altered-white);
+    
+}
+
+.logo {
+    height:100px ;
+    width: auto;
+
+}

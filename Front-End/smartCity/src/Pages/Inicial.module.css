@@ -1,0 +1,11 @@
+.body {
+  font-family: Arial;
+  flex: 1;
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+  height: 78.5vh;
+
+}
+
+
