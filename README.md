@@ -6,15 +6,31 @@
 
 ###
 
-- [Django WebSite](https://www.djangoproject.com/);<br>
-- [Install Python](https://www.python.org/);<br>
-- [DevOps & CI/CD](https://www.postman.com/downloads/);<br>
-- [Deploy Software](https://www.pythonanywhere.com/);<br>
-- [Schedule PI](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true);<br>
-- [Documentation (PDF)](https://drive.google.com/file/d/1ZADSvh_EBaQ-8oVm2wRKCsbV9ZOU4rSC/view?usp=drive_link);<br>
-- [React WebSite](https://react.dev/);<br>
-- [Source Code-Editor](https://code.visualstudio.com/download);<br>
-- [Install Node.JS](https://nodejs.org/pt).
+[Django WebSite](https://www.djangoproject.com/);
+<br>
+<br>
+[Install Python](https://www.python.org/);
+<br>
+<br>
+[DevOps & CI/CD](https://www.postman.com/downloads/);
+<br>
+<br>
+[Deploy Software](https://www.pythonanywhere.com/);
+<br>
+<br>
+[Schedule PI](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true);
+<br>
+<br>
+[Documentation (PDF)](https://drive.google.com/file/d/1ZADSvh_EBaQ-8oVm2wRKCsbV9ZOU4rSC/view?usp=drive_link);
+<br>
+<br>
+[React WebSite](https://react.dev/);
+<br>
+<br>
+[Source Code-Editor](https://code.visualstudio.com/download);
+<br>
+<br>
+[Install Node.JS](https://nodejs.org/pt).
 
 ###
 
