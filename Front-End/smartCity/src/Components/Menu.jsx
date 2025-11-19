@@ -5,10 +5,10 @@ export function Menu() {
   return (
     
     <nav className={style.menuFlex}>
-      <a href="#" className={style.menuItem}>Início</a>
-      <a href="#" className={style.menuItem}>Ambientes</a>
-      <a href="#" className={style.menuItem}>Sensores</a>
-      <a href="#" className={style.menuItem}>Histórico</a>
+      <Link to="/" className={style.menuItem}>Início</Link>
+      <Link to="/" className={style.menuItem}>Ambientes</Link>
+      <Link to="/" className={style.menuItem}>Sensores</Link>
+      <Link to="/" className={style.menuItem}>Histórico</Link>
     </nav>
 
   );

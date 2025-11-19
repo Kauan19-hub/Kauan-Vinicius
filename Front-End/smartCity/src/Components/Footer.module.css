@@ -1,10 +1,9 @@
 .footer {
-  background: var(--dark-green);
-  color: var(--altered-white);
-  padding: 10px 20px;
+  background: var(--gray);
+  opacity: 0.8;
+  color: var(--altered-black);
+  padding: 8px;
   text-align: center;
-  font-size: 30px;
-  font-family: Arial;
 
 }
 

@@ -10,7 +10,7 @@ export function Inicial() {
             <main className={style.body}>
                 <Outlet/>
             </main>
-            <Header/>
+            <Footer/>
         </>
     );
 }

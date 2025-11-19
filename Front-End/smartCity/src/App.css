@@ -7,10 +7,13 @@
 }
 
 :root {
-  --dark-green: #293325;     
-  --medium-green:  #729163;   
-  --altered-white: #f5f5f5;     
-  --black-text: #0e0e0e;    
+  --dark-green: #293325;
+  --gray: #b7b7b7;
+  --medium-green:  #729163;
+  --turq-text: #24cab6;   
+  --altered-white: #f5f5f5;
+  --red-text: #d21111;
+  --black-text: #0e0e0e;
 
 }
 
