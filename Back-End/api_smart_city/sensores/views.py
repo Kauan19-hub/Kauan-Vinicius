@@ -49,7 +49,7 @@ class SensorListCreate(generics.ListCreateAPIView):
         if tipo:
             qs = qs.filter(tipo=tipo)
         if status:
-            qs = qs.status(tipo=tipo)
+            qs = qs.filter(status=status)
         if local:
             qs = qs.filter(ambiente__local__nome__icontains=local)
         return qs
@@ -93,11 +93,12 @@ class MedRecentes(APIView):
     def get(self,request):
         horas = int(request.query_params.get("hours", 24))
         ate = timezone.now()
-        desde = ate - timedelta(horas=horas)
+        desde = ate - timedelta(hours=horas)
+        
         idSensor = request.query_params.get("sensor")
-        qs = Historico.objects.filter(timestamp__gte=desde, timestamp_lte=ate)
+        qs = Historico.objects.filter(timestamp__gte=desde, timestamp__lte=ate)
 
         if idSensor:
             qs = qs.filter(sensor__id_sensor=idSensor)
-        serial= HistoricoSerializer(qs,many=True)
-        return Response(serial.data)
+    
+        return Response(HistoricoSerializer(qs, many=True).data)

@@ -1,13 +1,14 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './Routes/Routes';
-import './app.css';
+import { StrictMode } from 'react';
 
 function App() {
-  
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <StrictMode>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
+    </StrictMode>
   );
 }
 

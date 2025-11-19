@@ -6,10 +6,39 @@
 
 ###
 
-- [https://www.django.com](https://www.djangoproject.com/)<br>
-- [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)<br>
-- [Schedule PI](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true)<br>
-- [Documentation (PDF)](https://drive.google.com/file/d/1ZADSvh_EBaQ-8oVm2wRKCsbV9ZOU4rSC/view?usp=drive_link)
+[Django WebSite](https://www.djangoproject.com/);
+<br>
+<br>
+[Install Python](https://www.python.org/);
+<br>
+<br>
+[DevOps & CI/CD](https://www.postman.com/downloads/);
+<br>
+<br>
+[Deploy Software](https://www.pythonanywhere.com/);
+<br>
+<br>
+[Schedule IP](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true);
+<br>
+<br>
+[Documentation (PDF)](https://drive.google.com/file/d/1ZADSvh_EBaQ-8oVm2wRKCsbV9ZOU4rSC/view?usp=drive_link);
+<br>
+<br>
+[React WebSite](https://react.dev/);
+<br>
+<br>
+[Source Code-Editor](https://code.visualstudio.com/download);
+<br>
+<br>
+[Install Node.JS](https://nodejs.org/pt).
+
+###
+
+<h6>Visual Studio Code Interface -- Official WebSite | Downloads for different operating systems</h6>
+
+###
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b203c64a-f8e8-45f9-9a23-9691dc6ade41" />
 
 ---
 
@@ -36,7 +65,7 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 "author": "Kauan Vinícius",
 "skill": "Full-Stack Jr",
 "created_at": ["2025", "November"],
-"main_languages": ["Python", "Django"],
+"main_languages": ["Python", "Django", "Node", "React"],
 "api_url": "http://localhost:8000/",
 ```
 
@@ -136,6 +165,38 @@ npm run dev
 
 ---
 
+```json
+{
+  "name": "smartcity",
+  "version": "0.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "smartcity",
+      "version": "0.0.0",
+      "dependencies": {
+        "@hookform/resolvers": "^5.2.2",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+        "react-hook-form": "^7.66.0",
+        "react-router-dom": "^7.9.6"
+      },
+      "devDependencies": {
+        "@eslint/js": "^9.39.1",
+        "@types/react": "^19.2.2",
+        "@types/react-dom": "^19.2.2",
+        "@vitejs/plugin-react": "^5.1.0",
+        "eslint": "^9.39.1",
+        "eslint-plugin-react-hooks": "^7.0.1",
+        "eslint-plugin-react-refresh": "^0.4.24",
+        "globals": "^16.5.0",
+        "vite": "^7.2.2"
+      }
+    },
+```
+---
+
 **<h2>🎨 Prototype Figma</h2>**
 
 ###
@@ -144,9 +205,9 @@ npm run dev
 
 ###
 
-<div align="center">
+<div align="left">
  <a href="https://www.figma.com/design/vG8RTChmcSyf97XEXaLjbY/Digital-City?m=auto&t=dsPRO4pmuNon2C56-6" title="Access to my Prototype">
-  <img width="400" height="400" alt="Figma" src="https://github.com/user-attachments/assets/4779996d-18e5-46fd-8a77-03ff97f915cf" />
+  <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6942a592-155b-497f-85f5-dd733b519851" />
  </a>
 </div>
 
