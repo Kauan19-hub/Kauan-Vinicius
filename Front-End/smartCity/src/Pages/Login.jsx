@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
-import api from "../services/api"; 
+import api from "../services/api";
 
 const schemaLogin = z.object({
     username: z.string().trim().min(1, 'Digite seu usuário'),
@@ -37,7 +37,8 @@ export function Login() {
             localStorage.setItem("access", res.data.access);
             localStorage.setItem("refresh", res.data.refresh);
 
-            console.log("Login realizado:", res.data);
+            console.log("Login efetuado:", res.data);
+            console.log("Sistema em operação:", res.data);
 
             navigate("/inicial");
 

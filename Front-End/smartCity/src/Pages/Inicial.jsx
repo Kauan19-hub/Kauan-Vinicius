@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import style from "../Pages/Inicial.module.css";
 
 const Header = () => (
@@ -34,6 +35,7 @@ export default function Inicial() {
   };
 
   return (
+    
     <div className={style.painel}>
       <Header />
 
@@ -76,7 +78,11 @@ export default function Inicial() {
               <p><strong>Longitude:</strong> {item.longitudeSensor ?? "N/A"}</p>
 
               <p><strong>Registrado em:</strong> {item.timestampSensor}</p>
+
+              <Link to="/" className={style.back}></Link>
             </div>
+
+            
           ))}
         </div>
       </main>
