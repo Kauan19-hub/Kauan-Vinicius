@@ -30,7 +30,10 @@
 [Source Code-Editor](https://code.visualstudio.com/download);
 <br>
 <br>
-[Install Node.JS](https://nodejs.org/pt).
+[Install Node.JS](https://nodejs.org/pt);
+<br>
+<br>
+[Apresentation Canva](https://www.canva.com/design/DAG5kgfZnsg/9FH1eMmFDjmhvffwtBH86Q/edit).
 
 ###
 
