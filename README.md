@@ -204,6 +204,12 @@ npm run dev
 ###
 ```powershell
 npm install -D tailwindcss postcss autoprefixer
+```
+
+###
+```json
+ "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
 ````
 
 ---
