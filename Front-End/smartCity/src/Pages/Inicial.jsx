@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "../Pages/Inicial.module.css";
-import { Footer } from "../Components/Footer";
-import { Header } from "../Components/Header";
+import Dashboardinfo from "../Components/Dashboardinfo";
+import '../../src/index.css'
 
 export default function Inicial() {
+
   const [dados, setDados] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -17,17 +18,19 @@ export default function Inicial() {
       const response = await fetch("http://127.0.0.1:8000/api/sensor/");
       const data = await response.json();
       setDados(Array.isArray(data) ? data : data.results || []);
+
     } catch (err) {
       setError("Erro ao buscar dados");
+
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    
     <div className={style.painel}>
-      <Header />
+
+    <Dashboardinfo/>
 
       <main style={{ flex: 1 }}>
         <button onClick={handleClick} className={style.btn}>Carregar Dados</button>
@@ -35,7 +38,7 @@ export default function Inicial() {
         {loading && <p className={style.error}>Carregando...</p>}
         {error && <p className={style.error}>{error}</p>}
 
-        <div className={style.cardsContainer}>
+          <div className={style.cardsContainer}>
           {dados.map((item, index) => (
             <div className={style.card} key={index}>
               
@@ -110,15 +113,12 @@ export default function Inicial() {
                  {item.timestampSensor}
                 </span>
               </p>
-
             </div>
+        ))}
 
-))}
-         <Link to="/" className={style.back}>Voltar</Link> 
-        </div>
+            <Link to="/" className={style.back}>Voltar</Link> 
+          </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,5 @@
-* {
+body {
     background-color: #F5F5F5;
-
 }
 
 .container {
@@ -11,18 +10,19 @@
     align-items: center;
     padding: 20px;
     transform: translateY(50px);
-
+    
 }
 
 .forms {
     padding: 40px 35px;
     border-radius: 16px;
+    background-color: #F5F5F5;
     width: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 18px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
 
 }
 
@@ -30,7 +30,7 @@
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.8rem;
-    color: #24CAB6;
+    color: #0E0E0E;
     font-weight: 700;
 
 }
@@ -38,8 +38,8 @@
 label {
     font-size: 1rem;
     color: #0E0E0E;
-    transform: translateY(9px);
-    margin: 0 12px;
+    transform: translateY(10px);
+    margin: 0 8px;
     
 }
 
@@ -49,17 +49,13 @@ input {
     border-radius: 25px;
     font-size: 1rem;
     outline: none;
-
-}
-
-input::placeholder {
-    font-size: 13px;
-    transform: translateX(7px);
+    transition: 0.2s ease;
 
 }
 
 input:focus {
-    border-color: #24CAB6;
+    box-shadow: 0 0 8px #0072FF;
+    border-color: #0072FF;
 }
 
 .buttonLogin {
@@ -67,7 +63,7 @@ input:focus {
     width: 600px;
     margin: 10px auto;
     padding: 14px;
-    background-color: #729163;
+    background: linear-gradient(135deg, #0072FF, #0A59C9);
     border-radius: 25px;
     border: none;
     color: #F5F5F5;
@@ -77,9 +73,8 @@ input:focus {
 }
 
 .buttonLogin:disabled {
-    background-color: #B7B7B7;
+    background: #B7B7B7;
     cursor: no-drop;
-    opacity: 0.6;
 
 }
 
