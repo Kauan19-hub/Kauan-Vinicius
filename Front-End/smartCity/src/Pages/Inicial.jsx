@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
+import { Footer } from "../Components/Footer";
 import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css'
