@@ -58,7 +58,7 @@ git clone https://github.com/Kauan19-hub/SmartCity-PI.git
 
 ###
 ```json
- "editor.fontFamily": "Arial",
+ "editor.fontFamily": "Arial", sans-serif,
 ```
 
 ###
