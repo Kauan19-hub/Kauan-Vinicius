@@ -1,28 +1,30 @@
+import style from "../Components/Dashboardinfo.module.css";
+
 export default function Dashboardinfo() {
     return (
-        <div className="w-full flex justify-center mt-10">
-            <div className="bg-white shadow-xl rounded-xl p-6 w-[300px]">
+        <div className={style.container}>
+            <div className={style.body}>
 
-                <h2 className="text-xl font-semibold text-center mb-4 text-gray-700">
+                <h2 className={style.title}>
                     Informações do Projeto
                 </h2>
 
-                <table>
+                <table className={style.table}>
                     <tbody>
 
-                        <tr className="border-b">
-                            <td className="py-3 text-gray-600 font-medium">Usuários Ativos</td>
-                            <td className="py-3 text-blue-600 font-bold text-lg">148</td>
+                        <tr>
+                            <td className={style.users}>Usuários Ativos:</td>
+                            <td className={style.number}>148</td>
                         </tr>
 
                         <tr>
-                            <td className="py-3 text-gray-600 font-medium">Registros Atuais</td>
-                            <td className="py-3 text-green-600 font-bold text-lg">23</td>
+                            <td className={style.users}>Registros Atuais:</td>
+                            <td className={style.number}>23</td>
                         </tr>
 
                         <tr>
-                            <td className="py-3 text-gray-600 font-medium">Status do Projeto</td>
-                            <td className="py-3 text-yellow-600 font-bold text-lg">Boas Condições</td>
+                            <td className={style.users}>Status do Projeto:</td>
+                            <td className={style.number}>Boas Condições</td>
                         </tr>
 
                     </tbody>
