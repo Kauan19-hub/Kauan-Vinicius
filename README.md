@@ -199,43 +199,6 @@ npm run dev
     },
 ```
 
-**<h2>TailwindCSS Download</h2>**
-
-###
-```powershell
-npm install -D tailwindcss postcss autoprefixer
-```
-
-###
-```json
- "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17",
-```
-
-###
-```ts
-module.exports = {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,jsx,ts,tsx",
-    ],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
-};
-```
-
-###
-```ts
-module.exports = {
-    plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-    },
-};
-```
-
 ---
 
 # React + Vite
@@ -270,4 +233,88 @@ If you are developing a production application, we recommend using TypeScript wi
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6942a592-155b-497f-85f5-dd733b519851" />
  </a>
 </div>
+
+---
+
+*Front-End*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=html" height="35" alt="html5 logo" title="HTML5" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=js" height="35" alt="javascript logo" title="JavaScript" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=nodejs" height="35" alt="nodejs logo" title="NodeJS" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=css" height="35" alt="css logo" title="CSS" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=react" height="35" alt="react logo" title="React" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=vite" height="35" alt="vite logo" title="Vite" />
+</div>
+
+###
+
+*Tools*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=vscode" height="35" alt="vscode logo" title="Visual Studio Code" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=git" height="35" alt="git logo" title="Git" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=github" height="35" alt="github logo" title="GitHub" />
+</div>
+
+###
+
+*Back-End*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=py" height="35" alt="python logo" title="Python" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=django" height="35" alt="django logo" title="Django" />
+</div>
+
+###
+
+*DevOps*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=postman" height="35" alt="postman logo" title="Postman" />
+</div>
+
+###
+
+*Data-Base*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=mysql" height="35" alt="mysql logo" title="MySQL" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=sqlite" height="35" alt="sqlite logo" title="SQLite" />
+</div>
+
+###
+
+*UI/UX*
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=figma" height="35" alt="figma logo" title="Figma" />
+  <img width="1" />
+  <img src="https://skillicons.dev/icons?i=ai" height="35" alt="adobeillustrator logo" title="Adobe Illustrator" />
+</div>
+
+###
+
+
 
