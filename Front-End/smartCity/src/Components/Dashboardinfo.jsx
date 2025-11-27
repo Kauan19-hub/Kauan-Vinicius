@@ -24,7 +24,7 @@ export default function Dashboardinfo() {
 
                         <tr>
                             <td className={style.users}>Status do Projeto:</td>
-                            <td className={style.number}>Boas Condições</td>
+                            <td className={style.number}>Aprovado</td>
                         </tr>
 
                     </tbody>

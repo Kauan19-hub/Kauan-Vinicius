@@ -2,6 +2,7 @@ import style from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import api from "../services/api";
@@ -56,7 +57,7 @@ export function Login() {
             <form className={style.forms} onSubmit={handleSubmit(sendData)}>
 
                 <div className={style.logoContainer}>
-                    <img src="./src/assets/logo.png" alt="Logo" className={style.logo} />
+                    <img src="./src/assets/logo.webp" alt="Logo" className={style.logo} />
                     <h2 className={style.title}>Digital City</h2>
                 </div>
 

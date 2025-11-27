@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+
 import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css';
@@ -43,7 +44,7 @@ export default function Inicial() {
           {dados.map((item, index) => (
             <div className={style.card} key={index}>
               
-              <h3 className={style.sensor}>Sensor {item.idSensor}</h3>
+              <h2 className={style.sensor}>Sensor {item.idSensor}</h2>
 
               <p>
                 <strong>Tipo:</strong>{" "}
@@ -60,7 +61,7 @@ export default function Inicial() {
               </p>
 
               <p>
-                <strong>Unidade:</strong>{" "}
+                <strong>Umidade:</strong>{" "}
                 <span className={style.colorSpan}>
                   {item.unidadeMedSensor}
                 </span>
@@ -76,21 +77,21 @@ export default function Inicial() {
               <p>
                 <strong>Ambiente:</strong>{" "}
                 <span className={style.colorSpan}>
-                  {item.nome || "N/A"}
+                  {item.ambiente_nome || "N/A"}
                 </span>
               </p>
 
               <p>
                 <strong>Local:</strong>{" "}
                 <span className={style.colorSpan}>
-                  {item.nome || "N/A"}
+                  {item.local_nome || "N/A"}
                 </span>
               </p>
 
               <p>
                 <strong>Responsável:</strong>{" "}
                 <span  className={style.colorSpan}>
-                  {item.nome || "N/A"}
+                  {item.responsavel_nome || "N/A"}
                 </span>
               </p>
 
