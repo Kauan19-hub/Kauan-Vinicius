@@ -201,6 +201,73 @@ npm run dev
 
 ---
 
+<h6>URL Back-End</h6>
+
+###
+
+```powershell
+http://127.0.0.1:8000/api/sensor/
+```
+
+<h6>URL Django Admin</h6>
+
+###
+```powershell
+http://127.0.0.1:8000/admin
+```
+
+<h6>URL Django API</h6>
+
+###
+```powershell
+http://127.0.0.1:8000/api
+```
+
+###
+
+<h6>URL Front-End</h6>
+
+###
+```powershell
+http://localhost:5173/
+```
+
+<h6>Output React</h6>
+
+###
+
+```jsx
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
+<h6>Output Django</h6>
+
+###
+
+```python
+System check identified no issues (0 silenced).
+November 27, 2025 - 07:57:30
+Django version 5.2.8, using settings 'api_smart_city.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+Performing system checks...
+```
+---
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f5128bbe-9509-4f99-83fb-cc9d74ed0236" />
+
+###
+
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/30e9dedc-6ddc-4530-b660-c0bbae458929" />
+
+###
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
