@@ -1,12 +1,12 @@
-from datetime import timedelta
-from django.utils import timezone
-from django.utils.dateparse import parse_datetime
-from rest_framework import generics, permissions, filters, viewsets
-from rest_framework.response import Response
-from rest_framework.views import APIView
+from datetime import timedelta;
+from django.utils import timezone;
+from django.utils.dateparse import parse_datetime;
+from rest_framework import generics, permissions, filters, viewsets;
+from rest_framework.response import Response;
 
-from .models import Responsavel, Ambiente, Local, Historico, Sensor
-from .serializers import ResponsavelSerializer, AmbienteSerializer, LocalSerializer, HistoricoSerializer, SensoresSerializer
+from rest_framework.views import APIView;
+from .models import Responsavel, Ambiente, Local, Historico, Sensor;
+from .serializers import ResponsavelSerializer, AmbienteSerializer, LocalSerializer, HistoricoSerializer, SensoresSerializer;
 
 class SensorViewSet(viewsets.ModelViewSet):
     queryset = Sensor.objects.all()
