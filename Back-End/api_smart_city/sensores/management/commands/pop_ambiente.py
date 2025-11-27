@@ -1,4 +1,5 @@
 import pandas as pd
+
 from django.core.management.base import BaseCommand
 from sensores.models import Ambiente, Local, Responsavel
 
