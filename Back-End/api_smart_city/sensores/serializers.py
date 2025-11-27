@@ -1,18 +1,15 @@
 from rest_framework import serializers
 from .models import Responsavel, Ambiente, Local, Historico, Sensor
 
-
 class ResponsavelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Responsavel
         fields = "__all__"
 
-
 class LocalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Local
         fields = "__all__"
-
 
 class AmbienteSerializer(serializers.ModelSerializer):
     local_nome = serializers.PrimaryKeyRelatedField(
@@ -23,7 +20,6 @@ class AmbienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ambiente
         fields = ["id", "local", "local_nome", "responsavel", "descricao"]
-
 
 class SensoresSerializer(serializers.ModelSerializer):
     ambiente_nome = serializers.CharField(source="ambienteSensor.descricao", read_only=True)
