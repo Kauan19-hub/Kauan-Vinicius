@@ -2,7 +2,7 @@
 
 ###
 
-**<h1>Welcome to the Django</h1>**
+**<h1>Welcome to the Django - Full-Stack Project</h1>**
 
 ###
 
