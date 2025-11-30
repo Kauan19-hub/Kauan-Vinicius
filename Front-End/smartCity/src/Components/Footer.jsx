@@ -1,3 +1,4 @@
+// Componente Footer com HTML semântico
 import style from './Footer.module.css';
 
 export default function Footer() {

@@ -1,3 +1,4 @@
+// Arquivo também para conexão com Django
 import axios from "axios";
 
 export async function login(username, password) {

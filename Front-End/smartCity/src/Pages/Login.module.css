@@ -100,6 +100,7 @@ input:focus {
 
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         height: auto;
@@ -133,6 +134,7 @@ input:focus {
     }
 }
 
+/* Responsividade */
 @media (max-width: 480px) {
     .forms {
         padding: 25px 20px;

@@ -1,3 +1,4 @@
+// Arquivo para conexão com Django
 import axios from "axios";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api";
@@ -15,6 +16,7 @@ api.interceptors.request.use((config) => {
     return config;
 });
 
+// Erro 401
 api.interceptors.response.use(
     (response) => response,
     async (error) => {

@@ -1,3 +1,4 @@
+// Importes necessários para uma das páginas principais
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './Routes/Routes';
 import { StrictMode } from 'react';

@@ -1,13 +1,16 @@
+// Componente tabela de dados com HTML semântico
 import style from "../Components/Dashboardinfo.module.css";
 
 export default function Dashboardinfo() {
     return (
-        <div className={style.container}>
-            <div className={style.body}>
+        <section className={style.container}>
+            <article className={style.body}>
 
-                <h2 className={style.title}>
-                    Informações do Projeto
-                </h2>
+                <header>
+                    <h2 className={style.title}>
+                        Informações do Projeto
+                    </h2>
+                </header>
 
                 <table className={style.table}>
                     <tbody>
@@ -30,7 +33,7 @@ export default function Dashboardinfo() {
                     </tbody>
                 </table>
 
-            </div>
-        </div>
+            </article>
+        </section>
     );
 }

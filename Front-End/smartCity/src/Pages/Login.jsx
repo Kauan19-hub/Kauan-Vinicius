@@ -1,3 +1,4 @@
+// Importes necessários
 import style from './Login.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
@@ -21,14 +22,12 @@ export function Login() {
         register,
         handleSubmit,
         watch,
-        formState: { errors },
     } = useForm({
         resolver: zodResolver(schemaLogin),
         mode: "onChange"
     });
 
-    console.log(errors);
-
+    // Validação de nome de usuário e senha, também registrados no Back-End e guardado no SQLite
     const usernameValue = watch("username");
     const passwordValue = watch("password");
 
@@ -39,6 +38,10 @@ export function Login() {
                 password: data.password
             });
 
+            // Alert de login realizado
+            setAuthError("");
+            alert("Login realizado")
+
             localStorage.setItem("access", res.data.access);
             localStorage.setItem("refresh", res.data.refresh);
 
@@ -46,20 +49,24 @@ export function Login() {
 
         } catch (err) {
             console.log(err);
+            alert("Usuário ou senha inválido");
             setAuthError("Usuário ou senha inválido");
         }
     }
 
+    // Botão de login desativado enquanto não fizer o login. Possui uma aparência de desativado com
+    //  psicologia das cores 
     const buttonDisabled = !(usernameValue && passwordValue);
 
+    // Interface com HTML semântico
     return (
         <section className={style.container}>
             <form className={style.forms} onSubmit={handleSubmit(sendData)}>
 
-                <div className={style.logoContainer}>
+                <header className={style.logoContainer}>
                     <img src="./src/assets/logo.webp" alt="Logo" className={style.logo} />
                     <h2 className={style.title}>Digital City</h2>
-                </div>
+                </header>
 
                 <label htmlFor="usuario">Usuário:</label>
                 <input id="usuario" type="text" placeholder="Digite seu usuário" {...register("username")} />
@@ -71,6 +78,7 @@ export function Login() {
                     <p className={style.error}>{authError}</p>
                 )}
 
+                {/* O botão de fato com o comando adicionado nele */}
                 <button className={style.buttonLogin} disabled={buttonDisabled}>Entrar</button>
             </form>
         </section>

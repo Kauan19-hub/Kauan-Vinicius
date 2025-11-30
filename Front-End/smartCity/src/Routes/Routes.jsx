@@ -1,3 +1,4 @@
+// Todas as rotas da aplicação
 import { Routes, Route } from "react-router-dom";
 import  Inicial  from "../Pages/Inicial";
 import { Login } from "../Pages/Login";

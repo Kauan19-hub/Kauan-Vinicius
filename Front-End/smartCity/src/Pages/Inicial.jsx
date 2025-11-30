@@ -1,3 +1,4 @@
+// Importes necessários
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -6,6 +7,7 @@ import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css';
 
+// Funçaõ default para importação
 export default function Inicial() {
 
   const [dados, setDados] = useState([]);
@@ -13,19 +15,23 @@ export default function Inicial() {
   const [error, setError] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
 
+  // Card maior ao clicar no botão do card menor
   const openModal = (item) => {
     setSelectedItem(item);
   };
 
+  // Fecha o card maior
   const closeModal = (item) => {
     setSelectedItem(null);
   };
+
 
   const handleClick = async () => {
     setLoading(true);
     setError(null);
 
     try {
+      // Conexão com o Back-End e erro ao buscar os dados de lá
       const response = await fetch("http://127.0.0.1:8000/api/sensor/");
       const data = await response.json();
       setDados(Array.isArray(data) ? data : data.results || []);
@@ -38,9 +44,11 @@ export default function Inicial() {
     }
   };
 
+  // Interface HTML semântico
   return (
-    <div className={style.painel}>
+    <section className={style.painel}>
 
+    {/* Importe da tabela de informações */}
     <Dashboardinfo/>
 
       <main style={{ flex: 1 }}>
@@ -49,13 +57,14 @@ export default function Inicial() {
         {loading && <p className={style.error}>Carregando...</p>}
         {error && <p className={style.error}>{error}</p>}
 
-          <div className={style.cardsContainer}>
+          <section className={style.cardsContainer}>
 
           {dados.map((item, index) => (
-            <div className={style.card} key={index}>
+            <article className={style.card} key={index}>
               
               <h2 className={style.sensor}>Sensor {item.idSensor}</h2>
 
+              {/* Cards com informações definidas no Back-End sendo chamadas no Front-End */}
               <p>
                 <strong>Tipo:</strong>{" "}
                 <span className={style.colorSpan}>
@@ -126,19 +135,23 @@ export default function Inicial() {
                 </span>
               </p>
 
+              {/* Botão do card maior */}
               <button className={style.buttonCard} onClick={() => openModal(item)}>
                 Ver mais
               </button>
-            </div>
+            </article>
         ))}
 
-            <Link to="/" className={style.back}>Voltar</Link> 
-          </div>
+            {/* Voltar para a tela de login */}
+            <Link to="/" className={style.back}>Voltar</Link>
+
+          </section>
       </main>
 
+      {/* Modal */}
       {selectedItem && (
-        <div className={style.modalOverlay} onClick={closeModal}>
-          <div className={style.modal} onClick={(e) => e.stopPropagation()}>
+        <section className={style.modalOverlay} onClick={closeModal}>
+          <article className={style.modal} onClick={(e) => e.stopPropagation()}>
             <h2>Sensor {selectedItem.idSensor}</h2>
 
              <p>
@@ -147,7 +160,6 @@ export default function Inicial() {
                   {selectedItem.tipoSensor}
                 </span>
               </p>
-
 
               <p>
                 <strong>Identificação:</strong>{" "}
@@ -212,15 +224,17 @@ export default function Inicial() {
                 </span>
               </p>
 
+              {/* Fechar o card maior */}
               <button className={style.buttonCard} onClick={() => closeModal(selectedItem)}>
                 Fechar
               </button>
-        </div>
-      </div>
+        </article>
+      </section>
 
       )}
 
+      {/* Importação da Footer */}
       <Footer/>
-    </div>
+    </section>
   );
 }
