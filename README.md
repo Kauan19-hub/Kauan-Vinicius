@@ -198,6 +198,14 @@ npm run dev
 
 ---
 
+**<h6>Insomnia</h6>**
+
+###
+
+`PUT`, `DELETE`, `GET`, `POST` -- for all elements of the system. All with these methods inside each one's folder
+
+###
+
 <h6>URL Back-End</h6>
 
 ###
