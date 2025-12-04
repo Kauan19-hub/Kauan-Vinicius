@@ -1,5 +1,10 @@
 from rest_framework import serializers
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 from .models import Responsavel, Ambiente, Local, Historico, Sensor
+
+class TokenListCreate(TokenObtainPairView):
+    serializer_class = TokenObtainPairSerializer
 
 class ResponsavelSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,7 +17,7 @@ class LocalSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class AmbienteSerializer(serializers.ModelSerializer):
-    local_nome = serializers.PrimaryKeyRelatedField(
+    local_nome = serializers.CharField(
         source="local.nome",
         read_only=True
     )

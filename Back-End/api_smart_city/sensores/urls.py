@@ -1,10 +1,14 @@
 from django.urls import path
-
 from django.http import JsonResponse
+
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from . import views
 
 urlpatterns = [
     path('', lambda request: JsonResponse({'message': 'PI em andamento'})),
+
+     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     path("responsavel/", views.ResponsavelListCreate.as_view(), name="resp-list-create"),
     path("responsavel/<int:pk>/", views.ResponsavelRetrieveUpDestroy.as_view(), name="resp-rud"),

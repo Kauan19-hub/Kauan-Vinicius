@@ -15,7 +15,7 @@ class SensorViewSet(viewsets.ModelViewSet):
 
 class SensorListCreate(generics.ListCreateAPIView):
     serializer_class = SensoresSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     filter_backends = [filters.SearchFilter]
     search_fields = ["tipo", "status", "ambiente__local__nome", "identificacao"]
 

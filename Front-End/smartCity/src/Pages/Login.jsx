@@ -48,7 +48,6 @@ export function Login() {
             navigate("/inicial");
 
         } catch (err) {
-            console.log(err);
             alert("Usuário ou senha inválido");
  
         }
