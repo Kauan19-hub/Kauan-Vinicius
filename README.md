@@ -280,14 +280,72 @@ Performing system checks...
 
 ###
 
+Methods: `GET`, `POST`, `PUT`, `DELETE`
+
+###
+
+**<h6>Local</h6>**
+
+###
+```
+http://127.0.0.1:8000/api/local/
+```
+
+**<h6>Ambiente</h6>**
+
+###
+```
+http://127.0.0.1:8000/api/ambiente/
+```
+
+**<h6>Responsavel</h6>**
+
+###
+```
+http://127.0.0.1:8000/api/responsavel/
+```
+
+###
+
+**<h6>Sensor</h6>**
+
+###
+```
+http://127.0.0.1:8000/sensor/ || http://127.0.0.1:8000/api/sensor/
+```
+
+###
+
+**<h6>Histórico</h6>**
+
+###
+```
+http://127.0.0.1:8000/api/historico/
+```
+
+###
+
+**<h6>Django Admin</h6>**
+
+###
+```
+http://127.0.0.1:8000/admin/ || http://127.0.0.1:8000/api/admin/
+```
+
+###
+
+**<h6>Base</h6>**
+
+###
+```
+http://127.0.0.1:8000/
+```
+
+###
+
 **<h6>Token</h6>**
 
 ###
-
-Method `POST`:
-
-###
-
 ```
 http://127.0.0.1:8000/api/token/
 ```
@@ -309,7 +367,7 @@ http://127.0.0.1:8000/api/token/
 
 ---
 
-**<h6>Token</h2>**
+**<h6>Token</h6>**
 
 ###
 
