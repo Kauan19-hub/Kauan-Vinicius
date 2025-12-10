@@ -474,4 +474,11 @@ If you are developing a production application, we recommend using TypeScript wi
 | <img src="https://skillicons.dev/icons?i=vite" height="35" title="Vite" /> |  |  |  |  |  |
 --------------------------------------------------------------------------------------------------
 
+**<h6>Extras - I couldn't find the icon</h6>**
+
+###
+
+`ZOD`;<br>
+`JWT`;<br>
+
 
