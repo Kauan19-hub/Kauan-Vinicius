@@ -34,6 +34,8 @@
 git clone https://github.com/Kauan19-hub/Kauan-Vinicius.git
 ```
 
+**<h6>Editor and Terminal</h6>**
+
 ###
 ```json
 "terminal.integrated.fontFamily": "none",
