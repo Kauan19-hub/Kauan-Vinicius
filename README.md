@@ -31,7 +31,7 @@
 ---
 
 ```powershell
-git clone https://github.com/Kauan19-hub/SmartCity-PI.git
+git clone https://github.com/Kauan19-hub/Kauan-Vinicius.git
 ```
 
 ###
