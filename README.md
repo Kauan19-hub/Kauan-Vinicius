@@ -518,6 +518,3 @@ If you are developing a production application, we recommend using TypeScript wi
 | <img src="https://skillicons.dev/icons?i=react" height="35" title="React" /> |  |  |  |  |  |
 | <img src="https://skillicons.dev/icons?i=vite" height="35" title="Vite" /> |  |  |  |  |  |
 --------------------------------------------------------------------------------------------------
-
----
-
