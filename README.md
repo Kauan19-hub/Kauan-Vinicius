@@ -1,7 +1,3 @@
-<h6>Private repository temporarily</h6>
-
-###
-
 **<h1>SmartCity | Digital City</h1>**
 
 ###
