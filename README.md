@@ -32,14 +32,6 @@
 <br>
 [Install Node.JS](https://nodejs.org/pt);
 
-###
-
-<h6>Visual Studio Code Interface -- Official WebSite | Downloads for different operating systems</h6>
-
-###
-
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/b203c64a-f8e8-45f9-9a23-9691dc6ade41" />
-
 ---
 
 ```powershell
