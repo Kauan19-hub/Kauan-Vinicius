@@ -46,6 +46,7 @@ label {
 
 input {
     padding: 12px 14px;
+    background-color: var(--altered_white);
     border: 2px solid var(--gray);
     border-radius: 25px;
     font-size: 1rem;

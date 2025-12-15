@@ -79,6 +79,14 @@ footer {
 
 }
 
+.colorSpan2inactivate {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 2px 8px;
+  border-radius: 8px;
+  
+}
+
 .back {
   text-decoration: none;
   text-align: center;

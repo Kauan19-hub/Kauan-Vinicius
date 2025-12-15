@@ -7,7 +7,7 @@ import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css';
 
-// Funçaõ default para importação
+// Função default para importação
 export default function Inicial() {
 
   const [dados, setDados] = useState([]);
@@ -111,7 +111,7 @@ export default function Inicial() {
 
               <p>
                 <strong>Status:</strong>{" "}
-                <span className={style.colorSpan2}>
+                <span className={item.statusSensor === "ativo" ? style.colorSpan2 : style.colorSpan2inactivate}>
                   {item.statusSensor}
                 </span>
               </p>
@@ -200,7 +200,7 @@ export default function Inicial() {
 
               <p>
                 <strong>Status:</strong>{" "}
-                <span className={style.colorSpan2}>
+                <span className={selectedItem.statusSensor === "ativo" ? style.colorSpan2 : style.colorSpan2inactivate}>
                   {selectedItem.statusSensor}
                 </span>
               </p>
