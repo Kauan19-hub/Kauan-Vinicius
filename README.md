@@ -18,12 +18,6 @@
 [Deploy Software](https://www.pythonanywhere.com/);
 <br>
 <br>
-[Schedule IP](https://docs.google.com/spreadsheets/d/12AE5yBveux_2cIrt4mSIaHuZQShaH1ww/edit?usp=drive_link&ouid=108717680234956090795&rtpof=true&sd=true);
-<br>
-<br>
-[Documentation (PDF)]();
-<br>
-<br>
 [React WebSite](https://react.dev/);
 <br>
 <br>
