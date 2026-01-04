@@ -497,15 +497,3 @@ If you are developing a production application, we recommend using TypeScript wi
   <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/6942a592-155b-497f-85f5-dd733b519851" />
  </a>
 </div>
-
----
-
-| Front-End | Back-End | Tools | DevOps | DataBase | UI/UX |
-|:-----------:|:----------:|:--------:|:--------:|:----------:|:--------:|
-| <img width="1" /> | <img width="1" /> | <img width="1" /> | <img width="1" /> | <img width="1" /> | <img width="1" /> |
-| <img src="https://skillicons.dev/icons?i=html" height="35" title="HTML5" /> | <img src="https://skillicons.dev/icons?i=py" height="35" title="Python" /> | <img src="https://skillicons.dev/icons?i=vscode" height="35" title="VSCode" /> | <img src="https://skillicons.dev/icons?i=postman" height="35" title="Postman" /> | <img src="https://skillicons.dev/icons?i=mysql" height="35" title="MySQL" /> | <img src="https://skillicons.dev/icons?i=figma" height="35" title="Figma" /> |
-| <img src="https://skillicons.dev/icons?i=js" height="35" title="JavaScript" /> | <img src="https://skillicons.dev/icons?i=django" height="35" title="Django" /> | <img src="https://skillicons.dev/icons?i=git" height="35" title="Git" /> |  | <img src="https://skillicons.dev/icons?i=sqlite" height="35" title="SQLite" /> | <img src="https://skillicons.dev/icons?i=ai" height="35" title="Adobe Illustrator" /> |
-| <img src="https://skillicons.dev/icons?i=nodejs" height="35" title="NodeJS" /> |  | <img src="https://skillicons.dev/icons?i=github" height="35" title="GitHub" /> |  |  |  |
-| <img src="https://skillicons.dev/icons?i=css" height="35" title="CSS" /> |  |  |  |  |  |
-| <img src="https://skillicons.dev/icons?i=react" height="35" title="React" /> |  |  |  |  |  |
-| <img src="https://skillicons.dev/icons?i=vite" height="35" title="Vite" /> |  |  |  |  |  |
