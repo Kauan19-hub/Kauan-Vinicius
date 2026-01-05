@@ -2,35 +2,9 @@
 
 ###
 
-**<h1>📊 SmartCity | Digital City</h1>**
+## 📊 SmartCity | Digital City
 
 ###
-
-[Django WebSite](https://www.djangoproject.com/ "Install Django for Back-End");
-<br>
-<br>
-[Install Python](https://www.python.org/ "Install Python 13.3 for Back-End");
-<br>
-<br>
-[DevOps & CI/CD](https://www.postman.com/downloads/ "install Postman for API endpoints test");
-<br>
-<br>
-[Deploy Software](https://www.pythonanywhere.com/ "Access pythonanywhere for Host - CI/CD");
-<br>
-<br>
-[React WebSite](https://react.dev/ "Access React for Front-End");
-<br>
-<br>
-[Source Code-Editor](https://code.visualstudio.com/download "Install Visual Studio Code for source code");
-<br>
-<br>
-[Install Node.JS](https://nodejs.org/pt "Install NodeJS for develop the project (MAIN)").
-
----
-
-```powershell
-git clone https://github.com/kauanvinicius9/IP-SmartCity.git
-```
 
 **<h6>Editor and Terminal</h6>**
 
