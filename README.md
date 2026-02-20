@@ -13,22 +13,7 @@
 "terminal.integrated.fontFamily": "none",
 "terminal.integrated.fontSize": 14,
 "terminal.integrated.lineHeight": 1.3,
-```
-
-###
-```json
  "editor.fontFamily": "Arial",
-```
-
-###
-```json
-"name": "Digital City",
-"description": "Integrator Project (PI)",
-"author": "Kauan Vinícius",
-"skill": "Full-Stack Jr",
-"created_at": ["2025", "November"],
-"main_languages": ["Python", "Django", "Node", "React"],
-"api_url": "http://localhost:8000/",
 ```
 
 ###
