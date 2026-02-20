@@ -1,8 +1,8 @@
-**✅️ Approved**
+<h6>Approved</h6>
 
 ###
 
-## 📊 SmartCity | Digital City
+## SmartCity | Digital City
 
 ###
 
@@ -30,20 +30,6 @@
 "main_languages": ["Python", "Django", "Node", "React"],
 "api_url": "http://localhost:8000/",
 ```
-
-###
-
-| Package | Version |
-|---------|---------|
-|asgiref  |                     `3.10.0` |
-|django   |                     `5.2.8` |
-|djangorestframework |          `3.16.1` |
-|djangorestframework_simplejwt | `5.5.1` |
-|pip |                          `25.3` |
-|PyJWT |                        `2.10.1` |
-|sqlparse |                     `0.5.3` |
-|tzdata |                       `2025.2` |
-|django-cors-headers |          `4.9.0`|
 
 ###
 ```powershell
@@ -79,7 +65,7 @@ class Command(BaseCommand):
             User.objects.create_superuser(username=username,email="",password=password)
             self.stdout.write(self.style.SUCCESS(f"Usuário {username} criado! Sua senha atual é {password}"))
         else:
-            self.stdout.write("Usuário já existe.")
+            self.stdout.write(f"Usuário {username} já existe.")
 ```
 
 ---
@@ -123,43 +109,6 @@ cd {name}
 ###
 ```powershell
 npm run dev
-```
-
----
-
-```json
-{
-
-  "name": "smartcity",
-  "version": "0.0.0",
-  "lockfileVersion": 3,
-  "requires": true,
-  "packages": {
-    "": {
-      "name": "smartcity",
-      "version": "0.0.0",
-      "dependencies": {
-        "@hookform/resolvers": "^5.2.2",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-        "react-hook-form": "^7.66.0",
-        "react-router-dom": "^7.9.6"
-
-      },
-
-      "devDependencies": {
-        "@eslint/js": "^9.39.1",
-        "@types/react": "^19.2.2",
-        "@types/react-dom": "^19.2.2",
-        "@vitejs/plugin-react": "^5.1.0",
-        "eslint": "^9.39.1",
-        "eslint-plugin-react-hooks": "^7.0.1",
-        "eslint-plugin-react-refresh": "^0.4.24",
-        "globals": "^16.5.0",
-        "vite": "^7.2.2"
-
-      }
-    },
 ```
 
 ---
@@ -212,35 +161,9 @@ http://127.0.0.1:8000/api
 
 ###
 ```powershell
-http://localhost:5173/
+http://localhost:5173
 ```
 
-<h6>Output React</h6>
-
-###
-
-```jsx
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
-```
-
-<h6>Output Django</h6>
-
-###
-
-```python
-System check identified no issues (0 silenced).
-November 27, 2025 - 07:57:30
-Django version 5.2.8, using settings 'api_smart_city.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-
-WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
-For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
-Watching for file changes with StatReloader
-Performing system checks...
-```
 ---
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f5128bbe-9509-4f99-83fb-cc9d74ed0236" />
@@ -343,7 +266,7 @@ http://127.0.0.1:8000/api/token/
 }
 ```
 
-⚠ The token needs to be updated every 5 minutes by the testing software
+> The token needs to be updated every 5 minutes by the testing software
 
 ---
 
@@ -370,30 +293,6 @@ path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
 ```
 http://127.0.0.1:8000/api/sensor -- AUTH -- BEARER TOKEN -- Refresh Code
-```
-
-###
-
-**<h6>Output</h6>**
-
-###
-```js
-[
-	{
-		"idSensor": 1,
-		"local_nome": null,
-		"responsavel_nome": null,
-		"tipoSensor": "temperatura",
-		"identifSensor": "temperatura_0",
-		"unidadeMedSensor": "°C",
-		"latitudeSensor": null,
-		"longitudeSensor": null,
-		"statusSensor": "ativo",
-		"timestampSensor": "2025-11-21T03:34:17.232555Z",
-		"ambienteSensor": null
-	},
-..... # Continue
-]
 ```
 
 ###
