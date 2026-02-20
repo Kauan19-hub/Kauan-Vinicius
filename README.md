@@ -13,7 +13,7 @@
 "terminal.integrated.fontFamily": "none",
 "terminal.integrated.fontSize": 14,
 "terminal.integrated.lineHeight": 1.3,
- "editor.fontFamily": "Arial",
+"editor.fontFamily": "Arial",
 ```
 
 ###
