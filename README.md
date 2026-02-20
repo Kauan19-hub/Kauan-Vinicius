@@ -151,14 +151,6 @@ http://localhost:5173
 
 ---
 
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f5128bbe-9509-4f99-83fb-cc9d74ed0236" />
-
-###
-
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/30e9dedc-6ddc-4530-b660-c0bbae458929" />
-
-###
-
 [Install Postman ➜ API Test](https://www.postman.com/downloads/);
 <br>
 <br>
