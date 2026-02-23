@@ -1,7 +1,3 @@
-<h6>Approved</h6>
-
-###
-
 ## SmartCity | Digital City
 
 ###
