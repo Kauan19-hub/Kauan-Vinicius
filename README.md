@@ -234,8 +234,8 @@ http://127.0.0.1:8000/api/token/
 
 ```json
 {
-	"refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2NDk0MzIyMCwiaWF0IjoxNzY0ODU2ODIwLCJqdGkiOiIwMjcwMzE4Yjk3ZmE0YjhkYmYxZTk0NmU1ZWRjNTg0ZCIsInVzZXJfaWQiOiIxIn0.im4eMIYq0KDaF5QJqHxs2DzAOWav0a_Ln8tYsD6SUB0",
-	"access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0ODYwNDIwLCJpYXQiOjE3NjQ4NTY4MjAsImp0aSI6IjMwZDNiNDQzZjgyMjQwNzZhOThlMWZlN2Q0MDhlNzVlIiwidXNlcl9pZCI6IjEifQ.mZk3khn2pL0d6pT3L_T8oLqHPDsdL-yoQd6oJpAydaU"
+  "refresh": "eyJhbGciOiJ...",
+  "access": "eyJhbGciOiJI..."
 }
 ```
 
