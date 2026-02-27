@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
             name='Sensor',
             fields=[
                 ('idSensor', models.AutoField(primary_key=True, serialize=False)),
-                ('tipoSensor', models.CharField(choices=[('temperatura', 'Temperatura'), ('luminosidade', 'Luminosidade'), ('umidade', 'Umidade'), ('contador', 'Contador')], max_length=25)),
+                ('tipoSensor', models.CharField(choices=[('temperatura', 'Temperatura'), ('luminosidade', 'Luminosidade'), ('unidade', 'Unidade'), ('contador', 'Contador')], max_length=25)),
                 ('identifSensor', models.CharField(max_length=110, unique=True)),
                 ('unidadeMedSensor', models.CharField(blank=True, max_length=25)),
                 ('latitudeSensor', models.DecimalField(blank=True, decimal_places=6, max_digits=9, null=True)),

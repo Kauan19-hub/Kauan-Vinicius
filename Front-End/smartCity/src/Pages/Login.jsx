@@ -11,13 +11,13 @@ import api from "../services/api";
 const schemaLogin = z.object({
     username: z.string().trim().min(1),
     password: z.string().trim().min(1)
-
+    
 });
 
 export function Login() {
     const navigate = useNavigate();
-    const [authError, setAuthError] = useState("");
-
+    const [message, setMessage] = useState(null);
+    
     const {
         register,
         handleSubmit,
@@ -39,25 +39,27 @@ export function Login() {
             });
 
             // Alert de login realizado
-            setAuthError("");
-            alert("Login realizado")
+            setMessage({ type: "success", text: "Login realizado" })
 
             localStorage.setItem("access", res.data.access);
             localStorage.setItem("refresh", res.data.refresh);
 
-            navigate("/inicial");
+            setTimeout(() => {
+                navigate("/inicial");
+            }, 1500);
 
         } catch (err) {
-            alert("Usuário ou senha inválido");
+            setMessage({ type: "error", text: "Usuário ou senha inválido"})
+
+            setTimeout(() => {
+            }, 1500);
  
         }
     }
 
-    // Botão de login desativado enquanto não fizer o login. Possui uma aparência de desativado com
-    //  psicologia das cores 
+    // Botão de login desativado enquanto não fizer o login. Possui uma aparência de desativado com psicologia das cores 
     const buttonDisabled = !(usernameValue && passwordValue);
 
-    // Interface com HTML semântico
     return (
         <section className={style.container}>
             <form className={style.forms} onSubmit={handleSubmit(sendData)}>
@@ -67,14 +69,17 @@ export function Login() {
                     <h2 className={style.title}>Digital City</h2>
                 </header>
 
-                <label htmlFor="usuario">Usuário:</label>
-                <input id="usuario" type="text" placeholder="Digite seu usuário" {...register("username")} />
+                <input id="usuario" type="text" placeholder="Usuário" {...register("username")} />
+                <input id="senha" type="password" placeholder="Senha" {...register("password")} />
 
-                <label htmlFor="senha">Senha:</label>
-                <input id="senha" type="password" placeholder="Digite sua senha" {...register("password")} />
-
-                {authError && (
-                    <p className={style.error}>{authError}</p>
+                {message && (
+                    <p className={
+                        message.type === "error"
+                            ? style.error
+                             : style.success
+                    }>
+                        {message.text}
+                    </p>
                 )}
 
                 {/* O botão de fato com o comando adicionado nele */}

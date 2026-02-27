@@ -24,7 +24,7 @@ class Sensor(models.Model):
     SENSOR_TYPES = [
         ("temperatura", "Temperatura"),
         ("luminosidade", "Luminosidade"),
-        ("umidade", "Umidade"),
+        ("unidade", "Unidade"),
         ("contador", "Contador"),
     ]
     STATUS = [
@@ -46,7 +46,7 @@ class Sensor(models.Model):
             unidade = {
                 "temperatura": "°C",
                 "luminosidade": "lux",
-                "umidade": "%",
+                "unidade": "%",
                 "contador": "num",
             }
             self.unidadeMedSensor = unidade.get(self.tipoSensor, "")

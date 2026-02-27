@@ -20,7 +20,19 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
     (response) => response,
     async (error) => {
+
+        const originalRequest = error.config;
+
+        if (
+            originalRequest.url.includes("/token/") ||
+            originalRequest.url.includes("/token/refresh/")
+        ) {
+            return Promise.reject(error);
+        }
+
         if (error.response?.status === 401) {
+            originalRequest._retry = true;
+            
             const refresh = localStorage.getItem("refresh");
 
             if (refresh) {

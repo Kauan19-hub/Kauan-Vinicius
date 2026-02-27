@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
+import api from "../services/api";
 import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css';
@@ -25,49 +26,29 @@ export default function Inicial() {
     setSelectedItem(null);
   };
 
-
   const handleClick = async () => {
     setLoading(true);
     setError(null);
 
     try {
+      const response = await api.get("http://127.0.0.1:8000/api/sensor");
+      console.log("response.data:", response.data);
 
-      // Autenticação com Token JWT
-      const token = localStorage.getItem("access");
-      console.log("Token enviado:", token);
+      const lista = Array.isArray(response.data)
+        ? response.data
+        : response.data.results || [];
 
-      if (!token) {
-        setError("Token não identificado. Faça login novamente");
-        setLoading(false);
-        return;
-
-      }
-
-      // Conexão com o Back-End e erro ao buscar os dados de lá
-      const response = await fetch("http://127.0.0.1:8000/api/sensor/", {
-        headers: {
-          "Authorization": `Bearer ${token}`,
-          "Content-Type": "application/json"
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error(`Erro ao buscar dados: ${response.status}`);
-      }
-
-      const data = await response.json();
-      setDados(Array.isArray(data) ? data : data.results || []);
+      setDados(lista);
 
     } catch (err) {
-      console.log(err);
-      setError("Erro ao buscar dados");
+      console.log("Erro completo:", err);
+      setError(err.message);
 
     } finally {
       setLoading(false);
     }
   };
 
-  // Interface HTML semântico
   return (
     <section className={style.painel}>
 
@@ -75,10 +56,10 @@ export default function Inicial() {
     <Dashboardinfo/>
 
       <main style={{ flex: 1 }}>
-        <button onClick={handleClick} className={style.btn}>Carregar Dados</button>
-
+        <button onClick={handleClick} className={style.btn}>Carregar dados</button>
+    
         {loading && <p className={style.error}>Carregando...</p>}
-        {error && <p className={style.error}>{error}</p>}
+        {error && <p className={style.error}>Erro ao carregar dados</p>}
 
           <section className={style.cardsContainer}>
 
@@ -103,7 +84,7 @@ export default function Inicial() {
               </p>
 
               <p>
-                <strong>Umidade:</strong>{" "}
+                <strong>Unidade:</strong>{" "}
                 <span className={style.colorSpan}>
                   {item.unidadeMedSensor}
                 </span>
@@ -192,7 +173,7 @@ export default function Inicial() {
               </p>
 
               <p>
-                <strong>Umidade:</strong>{" "}
+                <strong>Undade:</strong>{" "}
                 <span className={style.colorSpan}>
                   {selectedItem.unidadeMedSensor}
                 </span>
