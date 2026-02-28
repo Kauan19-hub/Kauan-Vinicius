@@ -16,17 +16,17 @@ export default function Dashboardinfo() {
                     <tbody>
 
                         <tr>
-                            <td className={style.users}>Usuários Ativos:</td>
-                            <td className={style.number}>148</td>
+                            <td className={style.users}>Usuários ativos:</td>
+                            <td className={style.number}>1</td>
                         </tr>
 
                         <tr>
-                            <td className={style.users}>Registros Atuais:</td>
-                            <td className={style.number}>23</td>
+                            <td className={style.users}>Registros atuais:</td>
+                            <td className={style.number}>1</td>
                         </tr>
 
                         <tr>
-                            <td className={style.users}>Status do Projeto:</td>
+                            <td className={style.users}>Status do projeto:</td>
                             <td className={style.approved}>Aprovado</td>
                         </tr>
 

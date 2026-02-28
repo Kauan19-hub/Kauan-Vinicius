@@ -11,9 +11,9 @@
 
 .btn {
   display: block;
-  padding: 15px 33px;
+  padding: 13px 30px;
   margin: 90px auto;
-  font-size: 20px;
+  font-size: 14px;
   background-color: var(--blue);
   border: none;
   color: var(--altered_white);
@@ -33,7 +33,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 13px;
+  padding: 13px 2px;
+  font-size: 14px;
   width: 182px;
   margin-top: -30px;
 

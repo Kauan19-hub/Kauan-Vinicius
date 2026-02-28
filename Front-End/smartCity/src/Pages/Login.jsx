@@ -52,6 +52,7 @@ export function Login() {
             setMessage({ type: "error", text: "Usuário ou senha inválido"})
 
             setTimeout(() => {
+                setMessage(null);
             }, 1500);
  
         }
@@ -65,8 +66,7 @@ export function Login() {
             <form className={style.forms} onSubmit={handleSubmit(sendData)}>
 
                 <header className={style.logoContainer}>
-                    <img src="./src/assets/logo.webp" alt="Logo" className={style.logo} />
-                    <h2 className={style.title}>Digital City</h2>
+                    <h2 className={style.title}>Login</h2>
                 </header>
 
                 <input id="usuario" type="text" placeholder="Usuário" {...register("username")} />

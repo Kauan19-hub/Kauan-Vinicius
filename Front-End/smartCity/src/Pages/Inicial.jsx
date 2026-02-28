@@ -1,5 +1,5 @@
 // Importes necessários
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
@@ -8,13 +8,21 @@ import style from "../Pages/Inicial.module.css";
 import Dashboardinfo from "../Components/Dashboardinfo";
 import '../../src/index.css';
 
-// Função default para importação
 export default function Inicial() {
-
+  
   const [dados, setDados] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
+  
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => {
+        setError(null);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
 
   // Card maior ao clicar no botão do card menor
   const openModal = (item) => {
@@ -31,7 +39,7 @@ export default function Inicial() {
     setError(null);
 
     try {
-      const response = await api.get("http://127.0.0.1:8000/api/sensor");
+      const response = await api.get("sensor/");
       console.log("response.data:", response.data);
 
       const lista = Array.isArray(response.data)
@@ -52,7 +60,6 @@ export default function Inicial() {
   return (
     <section className={style.painel}>
 
-    {/* Importe da tabela de informações */}
     <Dashboardinfo/>
 
       <main style={{ flex: 1 }}>
@@ -68,7 +75,6 @@ export default function Inicial() {
               
               <h2 className={style.sensor}>Sensor {item.idSensor}</h2>
 
-              {/* Cards com informações definidas no Back-End sendo chamadas no Front-End */}
               <p>
                 <strong>Tipo:</strong>{" "}
                 <span className={style.colorSpan}>
