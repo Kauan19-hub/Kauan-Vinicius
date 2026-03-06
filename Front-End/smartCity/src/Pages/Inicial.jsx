@@ -1,11 +1,11 @@
 // Importes necessários
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
+import Footer from "../components/footer";
 
 import api from "../services/api";
-import style from "../Pages/Inicial.module.css";
-import Dashboardinfo from "../Components/Dashboardinfo";
+import style from "../pages/inicial.module.css";
+import Dashboardinfo from "../components/dashboardinfo";
 import '../../src/index.css';
 
 export default function Inicial() {
@@ -90,9 +90,9 @@ export default function Inicial() {
               </p>
 
               <p>
-                <strong>Unidade:</strong>{" "}
+                <strong>Umidade:</strong>{" "}
                 <span className={style.colorSpan}>
-                  {item.unidadeMedSensor}
+                  {item.umidadeMedSensor}
                 </span>
               </p>
 
@@ -179,9 +179,9 @@ export default function Inicial() {
               </p>
 
               <p>
-                <strong>Undade:</strong>{" "}
+                <strong>Umidade:</strong>{" "}
                 <span className={style.colorSpan}>
-                  {selectedItem.unidadeMedSensor}
+                  {selectedItem.umidadeMedSensor}
                 </span>
               </p>
 

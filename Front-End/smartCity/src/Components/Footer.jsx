@@ -1,5 +1,5 @@
 // Componente Footer com HTML semântico
-import style from './Footer.module.css';
+import style from './footer.module.css';
 
 const year = new Date().getFullYear()
 

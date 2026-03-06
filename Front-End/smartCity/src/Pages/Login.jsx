@@ -1,5 +1,5 @@
 // Importes necessários
-import style from './Login.module.css';
+import style from './login.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { z } from "zod";

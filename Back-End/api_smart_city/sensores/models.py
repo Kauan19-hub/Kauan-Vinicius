@@ -24,7 +24,7 @@ class Sensor(models.Model):
     SENSOR_TYPES = [
         ("temperatura", "Temperatura"),
         ("luminosidade", "Luminosidade"),
-        ("unidade", "Unidade"),
+        ("umidade", "Umidade"),
         ("contador", "Contador"),
     ]
     STATUS = [
@@ -34,7 +34,7 @@ class Sensor(models.Model):
     idSensor = models.AutoField(primary_key=True)
     tipoSensor = models.CharField(max_length=25, choices=SENSOR_TYPES)
     identifSensor = models.CharField(max_length=110, unique=True)
-    unidadeMedSensor = models.CharField(max_length=25, blank=True)
+    umidadeMedSensor = models.CharField(max_length=25, blank=True)
     latitudeSensor = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     longitudeSensor = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     statusSensor = models.CharField(max_length=12, choices=STATUS, default="ativo")
@@ -42,14 +42,14 @@ class Sensor(models.Model):
     timestampSensor = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
-        if not self.unidadeMedSensor:
-            unidade = {
+        if not self.umidadeMedSensor:
+            umidade = {
                 "temperatura": "°C",
                 "luminosidade": "lux",
-                "unidade": "%",
+                "umidade": "%",
                 "contador": "num",
             }
-            self.unidadeMedSensor = unidade.get(self.tipoSensor, "")
+            self.umidadeMedSensor = umidade.get(self.tipoSensor, "")
         super().save(*args, **kwargs)
 
     def __str__(self):

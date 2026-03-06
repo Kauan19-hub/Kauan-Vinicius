@@ -1,5 +1,5 @@
 // Componente tabela de dados com HTML semântico
-import style from "../Components/Dashboardinfo.module.css";
+import style from "../components/dashboardinfo.module.css";
 
 export default function Dashboardinfo() {
     return (

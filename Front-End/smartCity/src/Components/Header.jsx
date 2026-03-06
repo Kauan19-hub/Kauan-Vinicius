@@ -1,5 +1,5 @@
 // Componente Header com HTML semântico
-import style from './Header.module.css';
+import style from './header.module.css';
 import logo from '../assets/logo.webp';
 
 export function Header() {
